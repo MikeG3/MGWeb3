@@ -1,0 +1,76 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Background Image Styles */
+.background-image {
+    background-image: url('Images/background4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    z-index: -2;
+}
+
+/* Content Section Styles */
+.content {
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.overlay-item {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(055, 055, 055, 0.8);
+    position: relative;
+    z-index: 3;
+}
+
+.fixed-background {
+    background-image: url('Images/background7.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.more-content {
+    padding: 100px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* JavaScript will control the background image transition */
